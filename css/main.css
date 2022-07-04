@@ -447,11 +447,6 @@ img {
   margin-bottom: 30px;
 }
 
-.mob-menu-bottom {
-  position: absolute;
-  bottom: 48px;
-}
-
 .mob-contact__tel {
   font-weight: 500;
   font-size: 34px;
@@ -755,23 +750,17 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
-.feature__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+.feature__item {
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .feature__title {
-    text-align: left;
+  .feature__item {
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
-  .feature__title {
-    text-align: left;
+  .feature__item {
+    width: calc((100% - 90px) / 4);
   }
 }
 .feature__banner {
@@ -792,23 +781,30 @@ img {
     width: 270px;
   }
 }
-.feature__banner__text {
+.feature__title {
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.4;
   letter-spacing: 0.03em;
-}
-.feature .feature__item {
-  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
-  .feature .feature__item {
-    width: calc((100% - 30px) / 2);
+  .feature__title {
+    text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
-  .feature .feature__item {
-    width: calc((100% - 90px) / 4);
+  .feature__title {
+    text-align: left;
   }
+}
+.feature__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .work {

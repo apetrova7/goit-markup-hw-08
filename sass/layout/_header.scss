@@ -218,11 +218,6 @@
         }
     }
     
-    .mob-menu-bottom {
-        position: absolute;
-        bottom: 48px;
-    }
-    
     .mob-contact__tel {
         @include font(500, 34px, 1.17, 0.02em);
         color: $accent-color;
