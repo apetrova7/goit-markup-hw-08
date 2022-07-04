@@ -140,6 +140,7 @@
     @include font(400, 12px, 1.16, 0.03em);
     color: $primary-text-color;
     display: flex;
+    align-items: center;
     margin-bottom: 30px;
     @include desktop {
         @include font(400, 14px, 1.71, 0.03em);
