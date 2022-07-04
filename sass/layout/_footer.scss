@@ -1,0 +1,112 @@
+.footer {
+    display: flex;
+    background-color: $background-color-dark;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__title {
+        @include font(700, 14px, 1.14, 0.03em);
+        text-transform: uppercase;
+        color: $secondary-text-color;
+        padding-top: 10px;
+        margin-bottom: 20px;
+        @include desktop {
+            text-align: left;
+        }
+    }
+    >.container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        @include tablet {
+            justify-content: space-around
+        }
+        @include desktop {
+            display: inline-block;
+        }
+    }
+}
+
+.footer__block {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    vertical-align: top;
+    &:last-child {
+        margin: initial;
+    }
+    @include desktop {
+        display: inline-block;
+        margin-right: 70px;
+        text-align: left;
+    }
+}
+
+.address {
+    margin-top: 20px;
+}
+
+.address__link {
+    font-style: normal;
+    .address__item & {
+        color: $footer-text-color;
+        @include font(400, 14px, 1.71, 0.03em);
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .address__item.url & {
+        color: $secondary-text-color;
+    }
+}
+
+.address__item:not(:last-child) {
+    padding-right: 20px;
+    margin-bottom: 10px;
+    margin-right: 0;
+}
+
+.address .contact__item.url .contact__link:hover {
+    color: $accent-color;
+    fill: $accent-color;
+}
+
+.address .contact__item.url .contact__link:focus {
+    color: $accent-color;
+    fill: $accent-color;
+}
+
+.footer__mailing-input {
+    width: 480px;
+    height: 1.25;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 15px;
+    background-color: $background-color-dark;
+    margin-bottom: 20px;
+    color: $secondary-text-color;
+    @include desktop {
+        width: 358px;
+        height: 0.13;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+    &:focus {
+        outline: none;
+    }
+    &::placeholder {
+        @include font(400, 16px, 1.25, 0.03em);
+        align-items: center;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.mailing-icon {
+    fill: $secondary-text-color;
+    margin-left: 10px;
+}
+
+.submit__btn {
+    display: inline-flex;
+}

@@ -1,0 +1,10 @@
+.logo {
+    font-family: $second-font;
+    @include font(700, 26px, 1.19, 0.03em);
+    &--light {
+        color: $secondary-text-color;
+    }
+    &--dark {
+        color: $title-text-color;
+    }
+}

@@ -1,0 +1,16 @@
+.title {
+    @include font(700, 28px, 1.17, 0.03em);
+    text-align: center;
+    margin-bottom: 30px;
+    @include desktop {
+        @include font(700, 36px, 1.16, 0.03em);
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &--light {
+        color: $secondary-text-color;
+    }
+    &--dark {
+        color: $title-text-color;
+    }
+}

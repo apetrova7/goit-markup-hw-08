@@ -1,0 +1,23 @@
+body {
+    font-family: $primary-font;
+    color: $primary-text-color;
+    background-color: $background-color-white;
+    margin: 0px;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
