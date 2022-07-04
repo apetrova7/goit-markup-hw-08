@@ -966,7 +966,7 @@ img {
 .footer > .container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 60px;
 }
