@@ -44,12 +44,21 @@
     
     .nav__list {
         @extend %align-list;
+        @include tablet {
+            gap: 50px;
+        }
+        @include desktop {
+            gap: 0px;
+        }
     }
     
     .nav__item {
-        position: relative;
-        &:not(:last-child) {
-            margin-right: 50px;
+        margin: 0px;
+        @include desktop {
+            position: relative;
+            &:not(:last-child) {
+                margin-right: 50px;
+            }
         }
     }
     

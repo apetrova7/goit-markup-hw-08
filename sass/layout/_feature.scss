@@ -1,4 +1,7 @@
      .feature {
+         @include desktop {
+             margin-bottom: -94px;
+         }
          &__list {
              display: flex;
              flex-wrap: wrap;
