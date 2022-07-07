@@ -215,6 +215,16 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (min-width: 480px) {
+  .header > .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header > .container {
+    width: 768px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .header > .container {
     width: 1200px;
@@ -274,6 +284,11 @@ img {
 .nav__item {
   margin: 0px;
 }
+@media screen and (min-width: 768px) {
+  .nav__item {
+    position: relative;
+  }
+}
 @media screen and (min-width: 1200px) {
   .nav__item {
     position: relative;
@@ -308,7 +323,16 @@ img {
   border-radius: 2px;
   color: #2196F3;
   left: 0;
-  bottom: -32px;
+}
+@media screen and (min-width: 768px) {
+  .nav__item.active .nav__link::after {
+    bottom: -33px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__item.active .nav__link::after {
+    bottom: -32px;
+  }
 }
 
 .contact {
@@ -511,31 +535,16 @@ img {
   padding: 120px 0px;
   margin: 0 auto;
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob2x.jpg);
-  }
-}
 @media screen and (min-width: 768px) {
   .hero {
     padding: 120px 0px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab2x.jpg);
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-image.jpg);
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-image2x.jpg);
   }
 }
 .hero__title {
@@ -580,7 +589,7 @@ img {
 }
 
 .modal {
-  min-width: 450px;
+  width: 450px;
   height: 1.35;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
